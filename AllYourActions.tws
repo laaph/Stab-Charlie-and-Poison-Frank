@@ -1,0 +1,3532 @@
+(dp0
+S'buildDestination'
+p1
+V/Users/stanza/Active/0hGame/AllYourActions.html
+p2
+sS'saveDestination'
+p3
+V/Users/stanza/Active/0hGame/AllYourActions.tws
+p4
+sS'target'
+p5
+S'jonah'
+p6
+sS'storyPanel'
+p7
+(dp8
+S'widgets'
+p9
+(lp10
+(dp11
+S'selected'
+p12
+I00
+sS'pos'
+p13
+(lp14
+I10
+aI10
+asS'passage'
+p15
+(itiddlywiki
+Tiddler
+p16
+(dp17
+S'text'
+p18
+V\u000aIt's been a long day at work.  You are ready to go home, when your colleague Charlie indicates that it may not be safe to go home.  "World is ending today.  Don't go home.  You'll be much safer at the pub."\u000a\u000aWith that, he pulls out an umbrella, points it at the ceiling, and a blast comes out of the umbrella.  He levitates through the roof via the new hole in it.\u000a\u000aOn your desk, you see your house key and a five dollar bill.\u000a\u000aTo your south, there is the elevator.  To the north, there are more cubicles.\u000a<<set $haspoison = 0>><<set $askfordrinkaction = 1>><<set $droppoisonincoffeeaction = 1>><<set $toolatetogoupwithfrank = 0>><<set $frankaction = 1>><<set $keyintolakeaction = 1>> <<set $charlesaction = 1>><<set $getkeyaction = 1>><<set $getmoneyaction = 1>><<set $getknifeaction = 1>><<set $gonorthaction = 1>><<set $gosouthaction = 1>><<set $gowestaction = 1>><<set $goeastaction = 1>><<display Commands_Set_1>>
+p19
+sS'created'
+p20
+ctime
+struct_time
+p21
+((I2012
+I11
+I3
+I16
+I3
+I33
+I5
+I308
+I1
+tp22
+(dp23
+tp24
+Rp25
+sS'title'
+p26
+VStart
+p27
+sS'modified'
+p28
+g25
+sS'tags'
+p29
+(lp30
+sbsa(dp31
+g12
+I00
+sg13
+(lp32
+I290
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p33
+(dp34
+g18
+VWhat shall you do?\u000a\u000a<<if $askfordrinkaction>>\u000a[[Ask For Drink|No Drink With Charlie]]\u000a<<endif>>\u000a<<if $charlesaction>><<if $toolatetogoupwithfrank>>\u000a[[Jump On Charlie|Too Late To Jump On Charlie's Legs]] <<else>>[[Jump On Charlie|Clinging On For Dear Life On Charlie's Legs]]\u000a<<endif>><<endif>>\u000a<<if $getkeyaction>>\u000a[[Get Key|Got House Key]]\u000a<<endif>>\u000a<<if $getmoneyaction>>\u000a[[Get Money|Got Five Dollars]]\u000a<<endif>>\u000a<<if  $getknifeaction>>\u000a[[Get Knife|No Knife In The Office]]\u000a<<endif>>\u000a<<if $frankaction>>\u000a[[Stab Frank With The Knife|Don't Kill Frank Yet]]\u000a<<endif>>\u000a<<if $droppoisonincoffeeaction>>\u000a[[Drop Poison In To Coffee|No Poison Nor Coffee]]\u000a<<endif>>\u000a<<if $keyintolakeaction>>\u000a[[Throw Key Into Lake|Don't Make A Lake In Your Office]]\u000a<<endif>>\u000a<<if $gonorthaction>>\u000a[[Go North|The Rest Of The Office]]\u000a<<endif>>\u000a<<if $goeastaction>>\u000a[[Go East|Don't Jump Out The Window]]\u000a<<endif>>\u000a<<if $gosouthaction>>\u000a[[Go South|Outside The Elevator]]\u000a<<endif>>\u000a<<if $gowestaction>>\u000a[[Go West|Utility Closet]]\u000a<<endif>>
+p35
+sg20
+g21
+((I2012
+I11
+I3
+I16
+I12
+I3
+I5
+I308
+I1
+tp36
+(dp37
+tp38
+Rp39
+sg26
+VCommands_Set_1
+p40
+sg28
+g39
+sg29
+(lp41
+Vcommands
+p42
+aVcset1
+p43
+asbsa(dp44
+g12
+I00
+sg13
+(lp45
+I10
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p46
+(dp47
+g18
+V\u000aFrank is not here.  Don't kill him yet.\u000a<<set $frankaction = 0>><<display Commands_Set_1>>
+p48
+sg20
+g21
+((I2012
+I11
+I3
+I16
+I19
+I46
+I5
+I308
+I1
+tp49
+(dp50
+tp51
+Rp52
+sg26
+VDon't Kill Frank Yet
+p53
+sg28
+g52
+sg29
+(lp54
+Vnotyet
+p55
+aVnot
+p56
+aVyet
+p57
+asbsa(dp58
+g12
+I00
+sg13
+(lp59
+I290
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p60
+(dp61
+g18
+VYou take the five dollar bill.\u000a<<set $money = $money + 5>><<set $getmoneyaction = 0>><<set $toolatetogoupwithfrank = 1>><<display Commands_Set_1>>
+p62
+sg20
+g21
+((I2012
+I11
+I3
+I16
+I40
+I41
+I5
+I308
+I1
+tp63
+(dp64
+tp65
+Rp66
+sg26
+VGot Five Dollars
+p67
+sg28
+g66
+sg29
+(lp68
+sbsa(dp69
+g12
+I00
+sg13
+(lp70
+I150
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p71
+(dp72
+g18
+VYou take the house key.\u000a<<set $hashousekey = 1>><<set $getkeyaction = 0>><<set $toolatetogoupwithfrank = 1>><<display Commands_Set_1>>
+p73
+sg20
+g21
+((I2012
+I11
+I3
+I16
+I41
+I51
+I5
+I308
+I1
+tp74
+(dp75
+tp76
+Rp77
+sg26
+VGot House Key
+p78
+sg28
+g77
+sg29
+(lp79
+sbsa(dp80
+g12
+I00
+sg13
+(lp81
+I430
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p82
+(dp83
+g18
+VThere is no knife here.\u000a<<set $getknifeaction = 0>><<display Commands_Set_1>>
+p84
+sg20
+g21
+((I2012
+I11
+I3
+I16
+I55
+I38
+I5
+I308
+I1
+tp85
+(dp86
+tp87
+Rp88
+sg26
+VNo Knife In The Office
+p89
+sg28
+g88
+sg29
+(lp90
+sbsa(dp91
+g12
+I00
+sg13
+(lp92
+I850
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p93
+(dp94
+S'text'
+p95
+V<<set $charlesaction = 0>>\u000aWithout thinking too carefully about it, you run in the general direction of Charlie, jump up in to the air, and manage to cling to his legs!\u000a\u000aCharlie looks down at you, and says "Oh no."\u000a\u000aYou take a moment to breath as you both drift off slowly in to the sky.  At some point, you ask, "where are we going?"\u000a\u000aCharlie replies "To the pub, of course."\u000a\u000aThat's a relief.  You thought you might get sucked up by aliens or something.\u000a\u000aCharlie continues, "Unfortunately, the regulars of this pub are not too friendly towards humans, otherwise I would have invited you along.  I can't imagine you wanting to jump here, so I guess we'll wait until we get there and then we'll figure something out."\u000a\u000aYou drift up in to the sky and eventually approach a spaceship.\u000a[[Bay Of An Alien Ship]]
+p96
+sS'created'
+p97
+g21
+((I2012
+I11
+I3
+I17
+I3
+I10
+I5
+I308
+I1
+tp98
+(dp99
+tp100
+Rp101
+sS'title'
+p102
+VClinging On For Dear Life On Charlie's Legs
+p103
+sS'modified'
+p104
+g101
+sS'tags'
+p105
+(lp106
+sbsa(dp107
+g12
+I00
+sg13
+(lp108
+I990
+aI290
+asg15
+(itiddlywiki
+Tiddler
+p109
+(dp110
+g95
+VCharles has already drifted off in to the sky while you were futzing about with other things.\u000a<<set $charlesaction = 0>><<display Commands_Set_1>>
+p111
+sg97
+g21
+((I2012
+I11
+I3
+I17
+I17
+I20
+I5
+I308
+I1
+tp112
+(dp113
+tp114
+Rp115
+sg102
+VToo Late To Jump On Charlie's Legs
+p116
+sg104
+g115
+sg105
+(lp117
+sbsa(dp118
+g12
+I00
+sg13
+(lp119
+I850
+aI290
+asg15
+(itiddlywiki
+Tiddler
+p120
+(dp121
+g95
+VAs you approach the alien ship, a small hatch in the bottom opens up.  You and Charles float in to the small hatch, which closes underneath you, and then Charles twists the handle of the umbrella, and you both float down to the ground.  You compose yourself and take stock of your surroundings.\u000a\u000a"To the north is the pub", Charles tells you, "and while it may not be the safest in there for you, it is for me, and I am going in there!"\u000a\u000a"To the east is the travel bay, they might arrange travel for you back down to earth.  If you explain that you were lost, they might be able to help you out."\u000a\u000a"Or you could explore the rest of the ship to the south.  I don't know what you'll find."\u000a\u000aWith that Charles promptly heads through the north door with a look that says he can not wait to get to his drink.\u000a\u000a<<display Commands_Set_Alien_Bay>>
+p122
+sg97
+g21
+((I2012
+I11
+I3
+I17
+I25
+I36
+I5
+I308
+I1
+tp123
+(dp124
+tp125
+Rp126
+sg102
+VBay Of An Alien Ship
+p127
+sg104
+g126
+sg105
+(lp128
+sbsa(dp129
+g12
+I00
+sg13
+(lp130
+I290
+aI290
+asg15
+(itiddlywiki
+Tiddler
+p131
+(dp132
+S'text'
+p133
+VWhat shall you do?\u000a\u000a<<if $askfordrinkaction>>\u000a[[Ask For Drink|No Drink In The Bay]]\u000a<<endif>>\u000a<<if $charlesaction>>\u000a\u000a<<endif>>\u000a<<if $getkeyaction>>\u000a[[Get Key|Got Alien Key]]\u000a<<endif>>\u000a<<if $getmoneyaction>>\u000a[[Get Money|No Money Here]]\u000a<<endif>>\u000a<<if  $getknifeaction>>\u000a[[Get Knife|No Knife]]\u000a<<endif>>\u000a<<if $frankaction>>\u000a[[Stab Frank With The Knife|What Did Frank Do To You?]]\u000a<<endif>>\u000a<<if $droppoisonincoffeeaction>>\u000a[[Drop Poison In To Coffee|You Have No Poison Nor Coffee]]\u000a<<endif>>\u000a<<if $keyintolakeaction>>\u000a[[Throw Key Into Lake|Throw The Key...]]\u000a<<endif>>\u000a<<if $gonorthaction>>\u000a[[Go North|To The Alien Pub]]\u000a<<endif>>\u000a<<if $goeastaction>>\u000a[[Go East|Travel Room]]\u000a<<endif>>\u000a<<if $gosouthaction>>\u000a[[Go South|Progress Blocked]]\u000a<<endif>>\u000a<<if $gowestaction>>\u000a[[Go West|Don't Go That Way]]\u000a<<endif>>
+p134
+sS'created'
+p135
+g21
+((I2012
+I11
+I3
+I16
+I12
+I3
+I5
+I308
+I1
+tp136
+(dp137
+tp138
+Rp139
+sS'title'
+p140
+VCommands_Set_Alien_Bay
+p141
+sS'modified'
+p142
+g139
+sS'tags'
+p143
+(lp144
+Vcommands
+p145
+aVcset1
+p146
+asbsa(dp147
+g12
+I00
+sg13
+(lp148
+I430
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p149
+(dp150
+S'text'
+p151
+VThere is no knife here.\u000a<<set $getknifeaction = 0>><<display Commands_Set_Alien_Bay>>
+p152
+sS'created'
+p153
+g21
+((I2012
+I11
+I3
+I16
+I55
+I38
+I5
+I308
+I1
+tp154
+(dp155
+tp156
+Rp157
+sS'title'
+p158
+VNo Knife
+p159
+sS'modified'
+p160
+g157
+sS'tags'
+p161
+(lp162
+sbsa(dp163
+g12
+I00
+sg13
+(lp164
+I10
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p165
+(dp166
+S'text'
+p167
+V\u000aFrank is not here.  You couldn't kill him you wanted to.\u000a<<set $frankaction = 0>><<display Commands_Set_Alien_Bay>>
+p168
+sS'created'
+p169
+g21
+((I2012
+I11
+I3
+I16
+I19
+I46
+I5
+I308
+I1
+tp170
+(dp171
+tp172
+Rp173
+sS'title'
+p174
+VWhat Did Frank Do To You?
+p175
+sS'modified'
+p176
+g173
+sS'tags'
+p177
+(lp178
+Vnotyet
+p179
+aVnot
+p180
+aVyet
+p181
+asbsa(dp182
+g12
+I00
+sg13
+(lp183
+I290
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p184
+(dp185
+g95
+VThere is no money to be found here, not even alien money.\u000a<<set $getmoneyaction = 0>><<display Commands_Set_Alien_Bay>>
+p186
+sg97
+g21
+((I2012
+I11
+I3
+I17
+I39
+I10
+I5
+I308
+I1
+tp187
+(dp188
+tp189
+Rp190
+sg102
+VNo Money Here
+p191
+sg104
+g190
+sg105
+(lp192
+sbsa(dp193
+g12
+I00
+sg13
+(lp194
+I1270
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p195
+(dp196
+g95
+VThat would be silly.\u000a<<set $goeastaction = 0>><<display Commands_Set_1>>
+p197
+sg97
+g21
+((I2012
+I11
+I3
+I17
+I42
+I21
+I5
+I308
+I1
+tp198
+(dp199
+tp200
+Rp201
+sg102
+VDon't Jump Out The Window
+p202
+sg104
+g201
+sg105
+(lp203
+sbsa(dp204
+g12
+I00
+sg13
+(lp205
+I1410
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p206
+(dp207
+g95
+V\u000aUnlike every other time you've approached the elevator, it here, ready, open and waiting for you. You can enter it to the east.\u000a<<set $toolatetogoupwithfrank = 1>><<set $gosouthaction = 0>><<display Commands_Set_Outside_Elevator>>
+p208
+sg97
+g21
+((I2012
+I11
+I3
+I17
+I46
+I32
+I5
+I308
+I1
+tp209
+(dp210
+tp211
+Rp212
+sg102
+VOutside The Elevator
+p213
+sg104
+g212
+sg105
+(lp214
+sbsa(dp215
+g12
+I00
+sg13
+(lp216
+I290
+aI570
+asg15
+(itiddlywiki
+Tiddler
+p217
+(dp218
+S'text'
+p219
+VWhat shall you do?\u000a<<if $askfordrink>>\u000a[[Ask For Drink|Where Are My Drink Bearers?]]\u000a<<endif>>\u000a<<if $charlesaction>>\u000a[[Jump On Charles|Lack Of Charlie]] \u000a<<endif>>\u000a<<if $getkeyaction>>\u000a[[Get Key|No Key In Front Of Elevator]]\u000a<<endif>>\u000a<<if $getmoneyaction>>\u000a[[Get Money|No Money In Front Of Elevator]]\u000a<<endif>>\u000a<<if  $getknifeaction>>\u000a[[Get Knife|Look For Knife]]\u000a<<endif>>\u000a<<if $frankaction>>\u000a[[Stab Frank With The Knife|All Alone]]\u000a<<endif>>\u000a<<if $droppoisonincoffeeaction>>\u000a[[Drop Poison In To Coffee|Nothing To Poison]]\u000a<<endif>>\u000a<<if $keyintolakeaction>>\u000a[[Throw Key Into Lake|The Elevator Is Not A Lake]]\u000a<<endif>>\u000a<<if $gonorthaction>>\u000a[[Go North|Back To Your Cubicle]]\u000a<<endif>>\u000a<<if $goeastaction>>\u000a[[Go East|In The Elevator]]\u000a<<endif>>\u000a<<if $gosouthaction>>\u000a\u000a<<endif>>\u000a<<if $gowestaction>>\u000a[[Go West|Attempted Escape]]\u000a<<endif>>
+p220
+sS'created'
+p221
+g21
+((I2012
+I11
+I3
+I16
+I12
+I3
+I5
+I308
+I1
+tp222
+(dp223
+tp224
+Rp225
+sS'title'
+p226
+VCommands_Set_Outside_Elevator
+p227
+sS'modified'
+p228
+g225
+sS'tags'
+p229
+(lp230
+VOutside
+p231
+aVthe
+p232
+asbsa(dp233
+g12
+I00
+sg13
+(lp234
+I1130
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p235
+(dp236
+g95
+VYou return to your cubicle.\u000a<<set $gonorthaction = 0>><<display Commands_Set_1>>
+p237
+sg97
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp238
+(dp239
+tp240
+Rp241
+sg102
+VBack To Your Cubicle
+p242
+sg104
+g241
+sg105
+(lp243
+sbsa(dp244
+g12
+I00
+sg13
+(lp245
+I990
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p246
+(dp247
+g95
+V<<if $hashousekey or $hasalienkey or $hasjanitorkey>>\u000aYou may have a key, but you have no lake to throw it in to.\u000a<<else>>\u000aYou don't have a key, nor any lake to throw it in to!\u000a<<endif>>\u000a<<set $keyintolakeaction = 0>><<display Commands_Set_1>>
+p248
+sg97
+g21
+((I2012
+I11
+I3
+I17
+I56
+I16
+I5
+I308
+I1
+tp249
+(dp250
+tp251
+Rp252
+sg102
+VDon't Make A Lake In Your Office
+p253
+sg104
+g252
+sg105
+(lp254
+sbsa(dp255
+g12
+I00
+sg13
+(lp256
+I1130
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p257
+(dp258
+g95
+VYou head towards the cubicle farm.  Most of your other colleagues have already left.  Frank is here, furiously typing away.  \u000a<<set $toolatetogoupwithfrank = 1>><<set $gonorthaction = 0>><<display Commands_Set_North_Office>>
+p259
+sg97
+g21
+((I2012
+I11
+I3
+I18
+I1
+I58
+I5
+I308
+I1
+tp260
+(dp261
+tp262
+Rp263
+sg102
+VThe Rest Of The Office
+p264
+sg104
+g263
+sg105
+(lp265
+sbsa(dp266
+g12
+I00
+sg13
+(lp267
+I570
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p268
+(dp269
+g95
+VYou drank your coffee hours ago, and while it did taste like poison, you see no reason to poison it further.  <<if $haspoison eq 0>>Nor do you have any poison.<<endif>>\u000a<<set $droppoisonincoffeeaction = 0>><<display Commands_Set_1>>
+p270
+sg97
+g21
+((I2012
+I11
+I3
+I18
+I7
+I21
+I5
+I308
+I1
+tp271
+(dp272
+tp273
+Rp274
+sg102
+VNo Poison Nor Coffee
+p275
+sg104
+g274
+sg105
+(lp276
+sbsa(dp277
+g12
+I00
+sg13
+(lp278
+I1550
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p279
+(dp280
+g95
+VYou open the utility closet and step inside.\u000a\u000aIn here there are various cleaning supplies.  You also see a knife, and a set of janitors keys.\u000a<<set $toolatetogoupwithfrank = 1>><<set $gowestaction = 0>><<display Commands_Set_Inside_Closet>>
+p281
+sg97
+g21
+((I2012
+I11
+I3
+I18
+I11
+I13
+I5
+I308
+I1
+tp282
+(dp283
+tp284
+Rp285
+sg102
+VUtility Closet
+p286
+sg104
+g285
+sg105
+(lp287
+sbsa(dp288
+g12
+I00
+sg13
+(lp289
+I290
+aI850
+asg15
+(itiddlywiki
+Tiddler
+p290
+(dp291
+S'text'
+p292
+VWhat shall you do?\u000a<<if $askfordrink>>\u000a[[Ask For Drink|The Drinks Here Are Not Tasty]]\u000a<<endif>>\u000a<<if $charlesaction>>\u000a[[Jump On Charles|Charlie Is Not In The Closet]]\u000a<<endif>>\u000a<<if $getkeyaction>>\u000a[[Get Key|Keys Are Acquired]]\u000a<<endif>>\u000a<<if $getmoneyaction>>\u000a[[Get Money|Don't Rob The Janitor]]\u000a<<endif>>\u000a<<if  $getknifeaction>>\u000a[[Get Knife|Got A Small Knife]]\u000a<<endif>>\u000a<<if $frankaction>>\u000a[[Stab Frank With The Knife|Good Murder Location]]\u000a<<endif>>\u000a<<if $droppoisonincoffeeaction>>\u000a[[Drop Poison In To Coffee|What To Poison]]\u000a<<endif>>\u000a<<if $keyintolakeaction>>\u000a[[Throw Key Into Lake|Throw The Key In The Bucket]]\u000a<<endif>>\u000a<<if $gonorthaction>>\u000a[[Go North|Don't Walk Into Walls]]\u000a<<endif>>\u000a<<if $goeastaction>>\u000a[[Go East|Back To Your Desk]]\u000a<<endif>>\u000a<<if $gosouthaction>>\u000a[[Go South|No Secret Exits To The South]]\u000a<<endif>>\u000a<<if $gowestaction>>\u000a\u000a<<endif>>
+p293
+sS'created'
+p294
+g21
+((I2012
+I11
+I3
+I16
+I12
+I3
+I5
+I308
+I1
+tp295
+(dp296
+tp297
+Rp298
+sS'title'
+p299
+VCommands_Set_Inside_Closet
+p300
+sS'modified'
+p301
+g298
+sS'tags'
+p302
+(lp303
+Vcommands
+p304
+aVcset1
+p305
+asbsa(dp306
+g12
+I00
+sg13
+(lp307
+I1270
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p308
+(dp309
+S'text'
+p310
+VYou return to your cubicle.\u000a<<set $goeastaction = 0>><<display Commands_Set_1>>
+p311
+sS'created'
+p312
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp313
+(dp314
+tp315
+Rp316
+sS'title'
+p317
+VBack To Your Desk
+p318
+sS'modified'
+p319
+g316
+sS'tags'
+p320
+(lp321
+sbsa(dp322
+g12
+I00
+sg13
+(lp323
+I150
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p324
+(dp325
+S'text'
+p326
+VOn the windowsill of a porthole to the west, you find something, that might, just might be a key.  You take it.\u000a<<set $hasalienkey = 1>><<set $getkeyaction = 0>><<display Commands_Set_Alien_Bay>>
+p327
+sS'created'
+p328
+g21
+((I2012
+I11
+I3
+I16
+I41
+I51
+I5
+I308
+I1
+tp329
+(dp330
+tp331
+Rp332
+sS'title'
+p333
+VGot Alien Key
+p334
+sS'modified'
+p335
+g332
+sS'tags'
+p336
+(lp337
+sbsa(dp338
+g12
+I00
+sg13
+(lp339
+I570
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p340
+(dp341
+S'text'
+p342
+VThere is no coffee here.  And you have nothing to poison it with.\u000a<<set $droppoisonincoffeeaction = 0>><<display Commands_Set_1>>
+p343
+sS'created'
+p344
+g21
+((I2012
+I11
+I3
+I18
+I7
+I21
+I5
+I308
+I1
+tp345
+(dp346
+tp347
+Rp348
+sS'title'
+p349
+VYou Have No Poison Nor Coffee
+p350
+sS'modified'
+p351
+g348
+sS'tags'
+p352
+(lp353
+sbsa(dp354
+g12
+I00
+sg13
+(lp355
+I990
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p356
+(dp357
+S'text'
+p358
+V<<if $hashousekey or $hasalienkey or $hasjanitorkey>>\u000aThrow the key where?\u000a<<else>>\u000aYou don't even have a key to throw!\u000a<<endif>>\u000a<<set $keyintolakeaction = 0>><<display Commands_Set_Alien_Bay>>
+p359
+sS'created'
+p360
+g21
+((I2012
+I11
+I3
+I17
+I56
+I16
+I5
+I308
+I1
+tp361
+(dp362
+tp363
+Rp364
+sS'title'
+p365
+VThrow The Key...
+p366
+sS'modified'
+p367
+g364
+sS'tags'
+p368
+(lp369
+sbsa(dp370
+g12
+I00
+sg13
+(lp371
+I1130
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p372
+(dp373
+S'text'
+p374
+VYou follow Charlie to to the [[Alien Pub]].\u000a<<set $gonorthaction = 0>>
+p375
+sS'created'
+p376
+g21
+((I2012
+I11
+I3
+I18
+I1
+I58
+I5
+I308
+I1
+tp377
+(dp378
+tp379
+Rp380
+sS'title'
+p381
+VTo The Alien Pub
+p382
+sS'modified'
+p383
+g380
+sS'tags'
+p384
+(lp385
+sbsa(dp386
+g12
+I00
+sg13
+(lp387
+I1270
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p388
+(dp389
+S'text'
+p390
+VAs you step through the door to the east, you approach what looks like an airplane ticket counter.  Several beings of all makes and sizes are standing in line, waiting for the ticket agent to sort out their woes.\u000a\u000aFrank is the ticketing agent.  Frank is clearly overwhelmed, and if you want to get home, you might need to be nice to him.  However, this line appears to be going nowhere fast.\u000a<<set $goeastaction = 0>> <<remember $goeastaction>><<display Commands_Set_Travel_Room>>
+p391
+sS'created'
+p392
+g21
+((I2012
+I11
+I3
+I17
+I42
+I21
+I5
+I308
+I1
+tp393
+(dp394
+tp395
+Rp396
+sS'title'
+p397
+VTravel Room
+p398
+sS'modified'
+p399
+g396
+sS'tags'
+p400
+(lp401
+sbsa(dp402
+g12
+I00
+sg13
+(lp403
+I1410
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p404
+(dp405
+S'text'
+p406
+V\u000aYou set out to the south, but there is an alien guard blocking your progress.  He grunts and says something in a language you don't understand.  Not to violate customs you don't understand, you accept his grunts as a "Don't go this way" message, and stop attempting to explore other parts of the alien spaceship as Charlie suggested.\u000a<<set $gosouthaction = 0>><<display Commands_Set_Alien_Bay>>
+p407
+sS'created'
+p408
+g21
+((I2012
+I11
+I3
+I17
+I46
+I32
+I5
+I308
+I1
+tp409
+(dp410
+tp411
+Rp412
+sS'title'
+p413
+VProgress Blocked
+p414
+sS'modified'
+p415
+g412
+sS'tags'
+p416
+(lp417
+sbsa(dp418
+g12
+I00
+sg13
+(lp419
+I1550
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p420
+(dp421
+S'text'
+p422
+VWhile there is a nice porthole in the wall to the west, I strongly suggest you do not attempt to go through it.  In this, however, you notice a strange small metallic object with an odd shape on the porthole, it might be a token or something.\u000a<<set $gowestaction = 0>><<display Commands_Set_Alien_Bay>>
+p423
+sS'created'
+p424
+g21
+((I2012
+I11
+I3
+I18
+I11
+I13
+I5
+I308
+I1
+tp425
+(dp426
+tp427
+Rp428
+sS'title'
+p429
+VDon't Go That Way
+p430
+sS'modified'
+p431
+g428
+sS'tags'
+p432
+(lp433
+sbsa(dp434
+g12
+I00
+sg13
+(lp435
+I1130
+aI570
+asg15
+(itiddlywiki
+Tiddler
+p436
+(dp437
+g95
+V\u000aAs you enter the alien pub, there are a million creatures of various shapes and sizes, each one odder than the last.  Charlie is here, and when he sees you he clearly disapproves.  "Didn't I tell you not to come here?  You will get eaten!" \u000a\u000aThere is a fountain, shaped like a small pond, with flowing water.\u000a\u000aThe bartender looks at you to see if you are ready to order.\u000a\u000a<<display Commands_Set_Alien_Pub>>
+p438
+sg97
+g21
+((I2012
+I11
+I3
+I18
+I51
+I48
+I5
+I308
+I1
+tp439
+(dp440
+tp441
+Rp442
+sg102
+VAlien Pub
+p443
+sg104
+g442
+sg105
+(lp444
+sbsa(dp445
+g12
+I00
+sg13
+(lp446
+I10
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p447
+(dp448
+S'text'
+p449
+V\u000aYou should wait until Frank is here before attempting his murder.\u000a<<set $frankaction = 0>><<display Commands_Set_Outside_Elevator>>
+p450
+sS'created'
+p451
+g21
+((I2012
+I11
+I3
+I16
+I19
+I46
+I5
+I308
+I1
+tp452
+(dp453
+tp454
+Rp455
+sS'title'
+p456
+VAll Alone
+p457
+sS'modified'
+p458
+g455
+sS'tags'
+p459
+(lp460
+Vnotyet
+p461
+aVnot
+p462
+aVyet
+p463
+asbsa(dp464
+g12
+I00
+sg13
+(lp465
+I710
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p466
+(dp467
+S'text'
+p468
+V<<if $toolatetogoupwithfrank>>\u000aCharlie is too far away to hear your request now.\u000a<<else>>\u000a"Sorry, I'd love to stay and drink, but I'm in bit of a hurry, I need to get to the pub!" Charlie tells you as he drifts off in to the sky.\u000a<<endif>>\u000a<<set $askfordrinkaction=0>><<display Commands_Set_1>>
+p469
+sS'created'
+p470
+g21
+((I2012
+I11
+I3
+I21
+I58
+I17
+I5
+I308
+I1
+tp471
+(dp472
+tp473
+Rp474
+sS'title'
+p475
+VNo Drink With Charlie
+p476
+sS'modified'
+p477
+g474
+sS'tags'
+p478
+(lp479
+sbsa(dp480
+g12
+I00
+sg13
+(lp481
+I710
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p482
+(dp483
+S'text'
+p484
+V\u000aStab Charlie and Poison Frank
+p485
+sS'created'
+p486
+g21
+((I2012
+I11
+I3
+I23
+I32
+I13
+I5
+I308
+I1
+tp487
+(dp488
+tp489
+Rp490
+sS'title'
+p491
+VStoryTitle
+p492
+sS'modified'
+p493
+g490
+sS'tags'
+p494
+(lp495
+sbsa(dp496
+g12
+I00
+sg13
+(lp497
+I290
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p498
+(dp499
+S'text'
+p500
+VThere is no money to be found here, not even alien money.\u000a<<set $getmoneyaction = 0>><<display Commands_Set_Outside_Elevator>>
+p501
+sS'created'
+p502
+g21
+((I2012
+I11
+I3
+I17
+I39
+I10
+I5
+I308
+I1
+tp503
+(dp504
+tp505
+Rp506
+sS'title'
+p507
+VNo Money In Front Of Elevator
+p508
+sS'modified'
+p509
+g506
+sS'tags'
+p510
+(lp511
+sbsa(dp512
+g12
+I00
+sg13
+(lp513
+I150
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p514
+(dp515
+S'text'
+p516
+VYou do not find any key here.\u000a<<set $getkeyaction = 0>><<display Commands_Set_Outside_Elevator>>
+p517
+sS'created'
+p518
+g21
+((I2012
+I11
+I3
+I16
+I41
+I51
+I5
+I308
+I1
+tp519
+(dp520
+tp521
+Rp522
+sS'title'
+p523
+VNo Key In Front Of Elevator
+p524
+sS'modified'
+p525
+g522
+sS'tags'
+p526
+(lp527
+sbsa(dp528
+g12
+I00
+sg13
+(lp529
+I430
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p530
+(dp531
+S'text'
+p532
+VThere is no knife here.\u000a<<set $getknifeaction = 0>><<display Commands_Set_Outside_Elevator>>
+p533
+sS'created'
+p534
+g21
+((I2012
+I11
+I3
+I16
+I55
+I38
+I5
+I308
+I1
+tp535
+(dp536
+tp537
+Rp538
+sS'title'
+p539
+VLook For Knife
+p540
+sS'modified'
+p541
+g538
+sS'tags'
+p542
+(lp543
+sbsa(dp544
+g12
+I00
+sg13
+(lp545
+I850
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p546
+(dp547
+g484
+VWhy would you want to kill Charlie and Frank?  How horrible.
+p548
+sg486
+g21
+((I2012
+I11
+I4
+I0
+I24
+I21
+I6
+I309
+I1
+tp549
+(dp550
+tp551
+Rp552
+sg491
+VStorySubtitle
+p553
+sg493
+g552
+sg494
+(lp554
+sbsa(dp555
+g12
+I00
+sg13
+(lp556
+I990
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p557
+(dp558
+g484
+VNote: you can perform each action only once throughout the entire game.  Choose the order you do them in wisely.
+p559
+sg486
+g21
+((I2012
+I11
+I4
+I0
+I25
+I12
+I6
+I309
+I1
+tp560
+(dp561
+tp562
+Rp563
+sg491
+VStoryAuthor
+p564
+sg493
+g563
+sg494
+(lp565
+sbsa(dp566
+g12
+I00
+sg13
+(lp567
+I1130
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p568
+(dp569
+g484
+VA story written for the [[0 hour game competition|http://0hgame.eu/]].\u000a\u000aInspired by the [[Indie Busker Game Jame ideas thread|http://www.reddit.com/r/indiebuskers/comments/11wfmo/pointnclick_adventure_game_with_onetimeuse/]]
+p570
+sg486
+g21
+((I2012
+I11
+I4
+I0
+I26
+I58
+I6
+I309
+I1
+tp571
+(dp572
+tp573
+Rp574
+sg491
+VStoryMenu
+p575
+sg493
+g574
+sg494
+(lp576
+sbsa(dp577
+g12
+I00
+sg13
+(lp578
+I710
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p579
+(dp580
+S'text'
+p581
+VAlthough there should always be greeters with drinks ready for weary travelers, it does not seem that the aliens provide these pleasantries for you.\u000a<<set $askfordrinkaction=0>><<display Commands_Set_Alien_Bay>>
+p582
+sS'created'
+p583
+g21
+((I2012
+I11
+I3
+I21
+I58
+I17
+I5
+I308
+I1
+tp584
+(dp585
+tp586
+Rp587
+sS'title'
+p588
+VNo Drink In The Bay
+p589
+sS'modified'
+p590
+g587
+sS'tags'
+p591
+(lp592
+sbsa(dp593
+g12
+I00
+sg13
+(lp594
+I570
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p595
+(dp596
+S'text'
+p597
+VThere is nothing interesting to poison here.  And you have nothing to poison it with.\u000a<<set $droppoisonincoffeeaction = 0>><<display Commands_Set_Outside_Elevator>>
+p598
+sS'created'
+p599
+g21
+((I2012
+I11
+I3
+I18
+I7
+I21
+I5
+I308
+I1
+tp600
+(dp601
+tp602
+Rp603
+sS'title'
+p604
+VNothing To Poison
+p605
+sS'modified'
+p606
+g603
+sS'tags'
+p607
+(lp608
+sbsa(dp609
+g12
+I00
+sg13
+(lp610
+I710
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p611
+(dp612
+S'text'
+p613
+VIt is slightly disappointing there is no one to give you a drink as you step on to the elevator.\u000a<<set $askfordrink=0>><<display Commands_Set_Alien_Bay>>
+p614
+sS'created'
+p615
+g21
+((I2012
+I11
+I3
+I21
+I58
+I17
+I5
+I308
+I1
+tp616
+(dp617
+tp618
+Rp619
+sS'title'
+p620
+VWhere Are My Drink Bearers?
+p621
+sS'modified'
+p622
+g619
+sS'tags'
+p623
+(lp624
+sbsa(dp625
+g12
+I00
+sg13
+(lp626
+I850
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p627
+(dp628
+S'text'
+p629
+V<<set $charlesaction = 0>>\u000aDespite how much you like to jump on Charlie, here is not here.
+p630
+sS'created'
+p631
+g21
+((I2012
+I11
+I3
+I17
+I3
+I10
+I5
+I308
+I1
+tp632
+(dp633
+tp634
+Rp635
+sS'title'
+p636
+VLack Of Charlie
+p637
+sS'modified'
+p638
+g635
+sS'tags'
+p639
+(lp640
+sbsa(dp641
+g12
+I00
+sg13
+(lp642
+I990
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p643
+(dp644
+S'text'
+p645
+VI don't know where you would like to throw anything here.\u000a<<set $keyintolakeaction = 0>><<display Commands_Set_Alien_Bay>>
+p646
+sS'created'
+p647
+g21
+((I2012
+I11
+I3
+I17
+I56
+I16
+I5
+I308
+I1
+tp648
+(dp649
+tp650
+Rp651
+sS'title'
+p652
+VThe Elevator Is Not A Lake
+p653
+sS'modified'
+p654
+g651
+sS'tags'
+p655
+(lp656
+sbsa(dp657
+g12
+I00
+sg13
+(lp658
+I1270
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p659
+(dp660
+S'text'
+p661
+VYou step in to the elevator.  With a "shick", the door closes behind you and suddenly you feel yourself falling.  Or are you flying?  Whatever direction you are going, it doesn't feel right and you are certain impending doom is going to happen when the sudden deceleration of impact happens.\u000a\u000aBut it doesn't -- while it does stop suddenly, it is just un-sudden enough that you and the elevator are not squished.\u000a\u000aThe door opens.  You step out of the door cautiously and find yourself in the [[Alien Pub]].  Charlie is here.\u000a\u000a<<set $goeastaction = 0>>
+p662
+sS'created'
+p663
+g21
+((I2012
+I11
+I3
+I17
+I42
+I21
+I5
+I308
+I1
+tp664
+(dp665
+tp666
+Rp667
+sS'title'
+p668
+VIn The Elevator
+p669
+sS'modified'
+p670
+g667
+sS'tags'
+p671
+(lp672
+sbsa(dp673
+g12
+I00
+sg13
+(lp674
+I1550
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p675
+(dp676
+S'text'
+p677
+VYou attempt to get out the window, where there is a fire escape, but you realize that you can't do that without breaking the glass.  Were this a true emergency, you might just do that, but you decide against it for now.\u000a<<set $gowestaction = 0>><<display Commands_Set_Outside_Elevator>>
+p678
+sS'created'
+p679
+g21
+((I2012
+I11
+I3
+I18
+I11
+I13
+I5
+I308
+I1
+tp680
+(dp681
+tp682
+Rp683
+sS'title'
+p684
+VAttempted Escape
+p685
+sS'modified'
+p686
+g683
+sS'tags'
+p687
+(lp688
+sbsa(dp689
+g12
+I00
+sg13
+(lp690
+I10
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p691
+(dp692
+S'text'
+p693
+V\u000aYou should wait until Frank is here before attempting his murder.  This is a good murder location, though, carefully hidden away and with supplies to clean up!\u000a<<set $frankaction = 0>><<display Commands_Set_Inside_Closet>>
+p694
+sS'created'
+p695
+g21
+((I2012
+I11
+I3
+I16
+I19
+I46
+I5
+I308
+I1
+tp696
+(dp697
+tp698
+Rp699
+sS'title'
+p700
+VGood Murder Location
+p701
+sS'modified'
+p702
+g699
+sS'tags'
+p703
+(lp704
+Vnotyet
+p705
+aVnot
+p706
+aVyet
+p707
+asbsa(dp708
+g12
+I00
+sg13
+(lp709
+I150
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p710
+(dp711
+S'text'
+p712
+VYou take the janitor keys.\u000a<<set $getkeyaction = 0>><<display Commands_Set_Inside_Closet>>
+p713
+sS'created'
+p714
+g21
+((I2012
+I11
+I3
+I16
+I41
+I51
+I5
+I308
+I1
+tp715
+(dp716
+tp717
+Rp718
+sS'title'
+p719
+VKeys Are Acquired
+p720
+sS'modified'
+p721
+g718
+sS'tags'
+p722
+(lp723
+sbsa(dp724
+g12
+I00
+sg13
+(lp725
+I290
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p726
+(dp727
+S'text'
+p728
+VThere is no money to be found here, and it's not like the janitor has enough to spare.\u000a<<set $getmoneyaction = 0>><<display Commands_Set_Inside_Closet>>
+p729
+sS'created'
+p730
+g21
+((I2012
+I11
+I3
+I17
+I39
+I10
+I5
+I308
+I1
+tp731
+(dp732
+tp733
+Rp734
+sS'title'
+p735
+VDon't Rob The Janitor
+p736
+sS'modified'
+p737
+g734
+sS'tags'
+p738
+(lp739
+sbsa(dp740
+g12
+I00
+sg13
+(lp741
+I430
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p742
+(dp743
+S'text'
+p744
+VYou find a small knife in here.  It's not the perfect knife for stabbing, but it will do.\u000a<<set $getknifeaction = 0>><<set $hasknife = 1>><<display Commands_Set_Inside_Closet>>
+p745
+sS'created'
+p746
+g21
+((I2012
+I11
+I3
+I16
+I55
+I38
+I5
+I308
+I1
+tp747
+(dp748
+tp749
+Rp750
+sS'title'
+p751
+VGot A Small Knife
+p752
+sS'modified'
+p753
+g750
+sS'tags'
+p754
+(lp755
+sbsa(dp756
+g12
+I00
+sg13
+(lp757
+I570
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p758
+(dp759
+S'text'
+p760
+VWhile there are plenty of things in here that I would consider a poison, there is no coffee in here, nor anything else I would poison.\u000a<<set $droppoisonincoffeeaction = 0>><<display Commands_Set_Outside_Elevator>>
+p761
+sS'created'
+p762
+g21
+((I2012
+I11
+I3
+I18
+I7
+I21
+I5
+I308
+I1
+tp763
+(dp764
+tp765
+Rp766
+sS'title'
+p767
+VWhat To Poison
+p768
+sS'modified'
+p769
+g766
+sS'tags'
+p770
+(lp771
+sbsa(dp772
+g12
+I00
+sg13
+(lp773
+I710
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p774
+(dp775
+S'text'
+p776
+VWhile no one is here to offer you a drink, perhaps you could appropriate one of these cleaning supplies as a drink?  You take some bleach.  It might be tasty.  <<set $haspoison = 1>><<set $askfordrink=0>><<display Commands_Set_Inside_Closet>>
+p777
+sS'created'
+p778
+g21
+((I2012
+I11
+I3
+I21
+I58
+I17
+I5
+I308
+I1
+tp779
+(dp780
+tp781
+Rp782
+sS'title'
+p783
+VThe Drinks Here Are Not Tasty
+p784
+sS'modified'
+p785
+g782
+sS'tags'
+p786
+(lp787
+sbsa(dp788
+g12
+I00
+sg13
+(lp789
+I850
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p790
+(dp791
+S'text'
+p792
+VCharlie is not here to be jumped upon.\u000a<<set $charlesaction = 0>><<display Commands_Set_Inside_Closet>>\u000a
+p793
+sS'created'
+p794
+g21
+((I2012
+I11
+I3
+I17
+I3
+I10
+I5
+I308
+I1
+tp795
+(dp796
+tp797
+Rp798
+sS'title'
+p799
+VCharlie Is Not In The Closet
+p800
+sS'modified'
+p801
+g798
+sS'tags'
+p802
+(lp803
+sbsa(dp804
+g12
+I00
+sg13
+(lp805
+I990
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p806
+(dp807
+S'text'
+p808
+V<<if $hashousekey or $hasalienkey or $hasjanitorkey>>\u000aHm.  That mop bucket has water in it.  It could be a lake!\u000a<<set $hashousekey = 0>><<set $hasalienkey=0>><<set $hasjanitorkey=0>>\u000aYou throw the key in the bucket.  Not much happens.<<else>>\u000aYou don't even have a key to throw!\u000a<<endif>>\u000a<<set $keyintolakeaction = 0>><<display Commands_Set_Inside_Closet>>
+p809
+sS'created'
+p810
+g21
+((I2012
+I11
+I3
+I17
+I56
+I16
+I5
+I308
+I1
+tp811
+(dp812
+tp813
+Rp814
+sS'title'
+p815
+VThrow The Key In The Bucket
+p816
+sS'modified'
+p817
+g814
+sS'tags'
+p818
+(lp819
+sbsa(dp820
+g12
+I00
+sg13
+(lp821
+I1410
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p822
+(dp823
+S'text'
+p824
+V\u000aYou can not walk through the wall to the south.\u000a<<set $gosouthaction = 0>><<display Commands_Set_Inside_Closet>>
+p825
+sS'created'
+p826
+g21
+((I2012
+I11
+I3
+I17
+I46
+I32
+I5
+I308
+I1
+tp827
+(dp828
+tp829
+Rp830
+sS'title'
+p831
+VNo Secret Exits To The South
+p832
+sS'modified'
+p833
+g830
+sS'tags'
+p834
+(lp835
+sbsa(dp836
+g12
+I00
+sg13
+(lp837
+I1130
+aI990
+asg15
+(itiddlywiki
+Tiddler
+p838
+(dp839
+S'text'
+p840
+VYou can not walk through the wall to the north.\u000a<<set $gonorthaction = 0>><<display Commands_Set_Inside_Closet>>
+p841
+sS'created'
+p842
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp843
+(dp844
+tp845
+Rp846
+sS'title'
+p847
+VDon't Walk Into Walls
+p848
+sS'modified'
+p849
+g846
+sS'tags'
+p850
+(lp851
+sbsa(dp852
+g12
+I00
+sg13
+(lp853
+I290
+aI1130
+asg15
+(itiddlywiki
+Tiddler
+p854
+(dp855
+S'text'
+p856
+VWhat shall you do?\u000a\u000a<<if $askfordrinkaction>>\u000a[[Ask For Drink|A Good Bartender Is Hard To Find]]\u000a<<endif>>\u000a<<if $charlesaction>>\u000a[[Jump On Charlie|A Flying Leap Toward Charlie]] \u000a<<endif>>\u000a<<if $getkeyaction>>\u000a[[Get Key|The Bartender Does Not Know Where You Left Your Keys]]\u000a<<endif>>\u000a<<if $getmoneyaction>>\u000a[[Get Money|Robbing The Tip Jar]]\u000a<<endif>>\u000a<<if  $getknifeaction>>\u000a[[Get Knife|Got A Scary Knife]]\u000a<<endif>>\u000a<<if $frankaction>>\u000a[[Stab Frank With The Knife|No Frank, No Stabbity]]\u000a<<endif>>\u000a<<if $droppoisonincoffeeaction>>\u000a[[Drop Poison In To Coffee|Poison Franks Coffee]]\u000a<<endif>>\u000a<<if $keyintolakeaction>>\u000a[[Throw Key Into Lake|Boil, Toil, Bubble, And Trouble]]\u000a<<endif>>\u000a<<if $gonorthaction>>\u000a[[Go North|The Crowds!]]\u000a<<endif>>\u000a<<if $goeastaction>>\u000a[[Go East|Not Easy]]\u000a<<endif>>\u000a<<if $gosouthaction>>\u000a[[Go South|Can't Escape]]\u000a<<endif>>\u000a<<if $gowestaction>>\u000a[[Go West|Inability To Go West]]\u000a<<endif>>
+p857
+sS'created'
+p858
+g21
+((I2012
+I11
+I3
+I16
+I12
+I3
+I5
+I308
+I1
+tp859
+(dp860
+tp861
+Rp862
+sS'title'
+p863
+VCommands_Set_Alien_Pub
+p864
+sS'modified'
+p865
+g862
+sS'tags'
+p866
+(lp867
+sbsa(dp868
+g12
+I00
+sg13
+(lp869
+I10
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p870
+(dp871
+S'text'
+p872
+V\u000aAt least wait until Frank is at the bar before attempting to kill him.\u000a<<set $frankaction = 0>><<display Commands_Set_Alien_Pub>>
+p873
+sS'created'
+p874
+g21
+((I2012
+I11
+I3
+I16
+I19
+I46
+I5
+I308
+I1
+tp875
+(dp876
+tp877
+Rp878
+sS'title'
+p879
+VNo Frank, No Stabbity
+p880
+sS'modified'
+p881
+g878
+sS'tags'
+p882
+(lp883
+sbsa(dp884
+g12
+I00
+sg13
+(lp885
+I150
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p886
+(dp887
+S'text'
+p888
+VYou do not find any key here.\u000a<<set $getkeyaction = 0>><<display Commands_Set_Alien_Pub>>
+p889
+sS'created'
+p890
+g21
+((I2012
+I11
+I3
+I16
+I41
+I51
+I5
+I308
+I1
+tp891
+(dp892
+tp893
+Rp894
+sS'title'
+p895
+VThe Bartender Does Not Know Where You Left Your Keys
+p896
+sS'modified'
+p897
+g894
+sS'tags'
+p898
+(lp899
+sbsa(dp900
+g12
+I00
+sg13
+(lp901
+I290
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p902
+(dp903
+S'text'
+p904
+VYou find a jar with some interesting looking currency in it.  You pull out the currency, and start looking at it, and are interupted by Charlie complaining.\u000a\u000a"Who let the humans in?  They cause so much trouble?  Why are you still allowed in here?"\u000a\u000aThe bartender snarls at you as well:  "Stop that!  You would be so much in trouble if I didn't need you to live.  Behave."\u000a\u000aYou return all the currency since you do not want to get eaten by the bartender.\u000a<<set $getmoneyaction = 0>><<remember $getmoneyaction>><<display Commands_Set_Alien_Pub>>
+p905
+sS'created'
+p906
+g21
+((I2012
+I11
+I3
+I17
+I39
+I10
+I5
+I308
+I1
+tp907
+(dp908
+tp909
+Rp910
+sS'title'
+p911
+VRobbing The Tip Jar
+p912
+sS'modified'
+p913
+g910
+sS'tags'
+p914
+(lp915
+sbsa(dp916
+g12
+I00
+sg13
+(lp917
+I430
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p918
+(dp919
+S'text'
+p920
+VYou find a large, sharp, interestingly shaped knife behind the counter.  You suddenly realize this knife is for cutting up some form of meat.  Perhaps it will be useful.\u000a\u000aThe bartender notices you take the knife, but says nothing and pretends not to notice.\u000a<<set $getknifeaction = 0>><<set $hasknife = 1>><<display Commands_Set_Alien_Pub>>
+p921
+sS'created'
+p922
+g21
+((I2012
+I11
+I3
+I16
+I55
+I38
+I5
+I308
+I1
+tp923
+(dp924
+tp925
+Rp926
+sS'title'
+p927
+VGot A Scary Knife
+p928
+sS'modified'
+p929
+g926
+sS'tags'
+p930
+(lp931
+sbsa(dp932
+g12
+I00
+sg13
+(lp933
+I570
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p934
+(dp935
+S'text'
+p936
+V<<if $haspoison>>You didn't notice Charlie drinking coffee until now, but now that you do, you drop some of the poison into his drink and wait.  \u000a\u000aHe conveniently drinks it without noticing, and the second he finishes the last drop, he starts coughing, hacking, gerking, and croaking, and with dramatic flailing and knocking over tables eventually dies.\u000a\u000aThe bartender snaps at you.  "Idiot!  You were supposed to poison Frank and stab Charlie!  If you kill them wrong, their plans of exploding the earth might still go off!"<<set $charliedead = 1>><<remember $charliedead>>\u000a<<if $frankdead>>\u000a<<display End_Scene>>\u000a<<else>>\u000a\u000a"Well, hopefully this isn't the case.  Here, take his umbrella, this will get you back to Frank quickly."\u000a\u000aHe hands you an umbrella.  As you grab it, a hole blasts in the ceiling, and the umbrella [[flies you through the roof|Floating Back To Earth]].<<endif>>\u000a<<else>>\u000aOf all the people, of all the drinks, you see Charlie drinking a coffee here!  Unfortunately, you do not have any poison.\u000a<<endif>>\u000a<<set $droppoisonincoffeeaction = 0>><<display Commands_Set_Alien_Pub>>
+p937
+sS'created'
+p938
+g21
+((I2012
+I11
+I3
+I18
+I7
+I21
+I5
+I308
+I1
+tp939
+(dp940
+tp941
+Rp942
+sS'title'
+p943
+VPoison Franks Coffee
+p944
+sS'modified'
+p945
+g942
+sS'tags'
+p946
+(lp947
+sbsa(dp948
+g12
+I00
+sg13
+(lp949
+I710
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p950
+(dp951
+S'text'
+p952
+V<<if $haspoison>>The bartender hands you something dark and fizzy.  <<if $charliedead eq 0>>Meanwhile, Charlie starts complaining about you again.  "Who let humans in to this place?  Man, it's really gone downhill here.  No quality control at all."\u000a\u000aThe bartender snarls, "Shut up Frank.  This funny human is my honored guest, and if you can't handle it you'll have to leave."\u000a<<endif>>\u000aConsidering what you've been through today, you really needed this.  You take one sip and nearly choke on how nasty it tastes.  But the fuzzy feelings it gives your head are so worth it.\u000a<<else>>\u000aThe bartender hands you something dark and fizzy.  <<if $charliedead eq 0>>Meanwhile, Charlie starts complaining about you again.  "Who let humans in to this place?  Man, it's really gone downhill here.  No quality control at all."\u000a\u000aThe bartender snarls, "Shut up Frank.  This funny human is my honored guest, and if you can't handle it you'll have to leave."\u000a<<endif>>\u000aConsidering what you've been through today, you really needed this.  You are about to take a sip when the bartender stops you and is making all sorts of "no no no" motions.  He points at the concoction he handed you and makes the slit-throat motions.\u000a<<set $haspoison = 1>><<remember $haspoison>>\u000a<<endif>>\u000a<<set $askfordrink=0>><<remember $askfordrink>><<display Commands_Set_Alien_Pub>>
+p953
+sS'created'
+p954
+g21
+((I2012
+I11
+I3
+I21
+I58
+I17
+I5
+I308
+I1
+tp955
+(dp956
+tp957
+Rp958
+sS'title'
+p959
+VA Good Bartender Is Hard To Find
+p960
+sS'modified'
+p961
+g958
+sS'tags'
+p962
+(lp963
+sbsa(dp964
+g12
+I00
+sg13
+(lp965
+I850
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p966
+(dp967
+S'text'
+p968
+V<<if $hasknife>>You run toward Charlie.  As you run towards him, things start falling out your pockets, and you scramble to put them back in your pockets.  You don't quite succeed, but you don't drop anything either.  You take a flying leap towards Charlie, with various things in various locations between your hands, your pockets, and mid-air, and you land on Charlie, mysteriously with your knife in hand, and in his jugular vein.\u000a\u000a"Good job!" says the bartender, "I knew you could do it."<<set $charliedead>><<set $frankstabbed>>\u000a<<if $frankdead>>\u000a<<display End_Scene>>\u000a<<else>>\u000a"Here, take his umbrella, this will get you back to Frank quickly."\u000a\u000aHe hands you an umbrella.  As you grab it, a hole blasts in the ceiling, and the umbrella [[flies you through the roof|Floating Back To Earth]].<<endif>><<else>>\u000a<<set $charlesaction = 0>>
+p969
+sS'created'
+p970
+g21
+((I2012
+I11
+I3
+I17
+I3
+I10
+I5
+I308
+I1
+tp971
+(dp972
+tp973
+Rp974
+sS'title'
+p975
+VA Flying Leap Toward Charlie
+p976
+sS'modified'
+p977
+g974
+sS'tags'
+p978
+(lp979
+sbsa(dp980
+g12
+I00
+sg13
+(lp981
+I1130
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p982
+(dp983
+S'text'
+p984
+VThe crowd of people in the pub will not let you go north.\u000a<<set $gonorthaction = 0>><<display Commands_Set_Alien_Pub>>
+p985
+sS'created'
+p986
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp987
+(dp988
+tp989
+Rp990
+sS'title'
+p991
+VThe Crowds!
+p992
+sS'modified'
+p993
+g990
+sS'tags'
+p994
+(lp995
+sbsa(dp996
+g12
+I00
+sg13
+(lp997
+I570
+aI1410
+asg15
+(itiddlywiki
+Tiddler
+p998
+(dp999
+g484
+VYou find yourself floating back to Earth.  Not just anywhere on Earth, but right back to your very office!  It's the other side of the cubicle farm from where your desk is, but it's still very much your office.\u000a\u000aFrank is here.\u000a\u000a<<display Commands_Set_North_Office>>
+p1000
+sg486
+g21
+((I2012
+I11
+I4
+I1
+I29
+I1
+I6
+I309
+I0
+tp1001
+(dp1002
+tp1003
+Rp1004
+sg491
+VFloating Back To Earth
+p1005
+sg493
+g1004
+sg494
+(lp1006
+sbsa(dp1007
+g12
+I00
+sg13
+(lp1008
+I990
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p1009
+(dp1010
+g484
+V<<set $keyintolakeaction = 0>><<display Commands_Set_Alien_Pub>>
+p1011
+sg486
+g21
+((I2012
+I11
+I4
+I1
+I43
+I49
+I6
+I309
+I0
+tp1012
+(dp1013
+tp1014
+Rp1015
+sg491
+VBoil, Toil, Bubble, And Trouble
+p1016
+sg493
+g1015
+sg494
+(lp1017
+sbsa(dp1018
+g12
+I00
+sg13
+(lp1019
+I1270
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p1020
+(dp1021
+S'text'
+p1022
+VMoving about in the pub is not easy due to the crowds.\u000a<<set $goeastaction = 0>><<display Commands_Set_Alien_Pub>>
+p1023
+sS'created'
+p1024
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp1025
+(dp1026
+tp1027
+Rp1028
+sS'title'
+p1029
+VNot Easy
+p1030
+sS'modified'
+p1031
+g1028
+sS'tags'
+p1032
+(lp1033
+sbsa(dp1034
+g12
+I00
+sg13
+(lp1035
+I1550
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p1036
+(dp1037
+S'text'
+p1038
+VThe crowds make travel in the pub difficult.\u000a<<set $gowestaction = 0>><<display Commands_Set_Alien_Pub>>
+p1039
+sS'created'
+p1040
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp1041
+(dp1042
+tp1043
+Rp1044
+sS'title'
+p1045
+VInability To Go West
+p1046
+sS'modified'
+p1047
+g1044
+sS'tags'
+p1048
+(lp1049
+sbsa(dp1050
+g12
+I00
+sg13
+(lp1051
+I1410
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p1052
+(dp1053
+S'text'
+p1054
+VThe crowds of the pub make even returning from whence you came prety much impoosible.\u000a<<set $gosouthaction = 0>><<display Commands_Set_Alien_Pub>>
+p1055
+sS'created'
+p1056
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp1057
+(dp1058
+tp1059
+Rp1060
+sS'title'
+p1061
+VCan't Escape
+p1062
+sS'modified'
+p1063
+g1060
+sS'tags'
+p1064
+(lp1065
+sbsa(dp1066
+g12
+I00
+sg13
+(lp1067
+I290
+aI1410
+asg15
+(itiddlywiki
+Tiddler
+p1068
+(dp1069
+S'text'
+p1070
+VWhat shall you do?\u000a\u000a<<if $askfordrinkaction>>\u000a[[Ask For Drink|No Drink With Frank]]\u000a<<endif>>\u000a<<if $charlesaction>>[[Jump On Charlie|No Charlie]]\u000a<<endif>>\u000a<<if $getkeyaction>>\u000a[[Get Key|Whose Keys?]]\u000a<<endif>>\u000a<<if $getmoneyaction>>\u000a[[Get Money|Looking For Money In All The Wrong Places]]\u000a<<endif>>\u000a<<if  $getknifeaction>>\u000a[[Get Knife|Maybe You Should Get The Knife Elsewhere]]\u000a<<endif>>\u000a<<if $frankaction>>\u000a[[Stab Frank With The Knife|Murder]]\u000a<<endif>>\u000a<<if $droppoisonincoffeeaction>>\u000a[[Drop Poison In To Coffee|Poison Charlie's Coffee]]\u000a<<endif>>\u000a<<if $keyintolakeaction>>\u000a[[Throw Key Into Lake|There Is No Lake Here]]\u000a<<endif>>\u000a<<if $gonorthaction>>\u000a[[Go North|Don't Go Yet]]\u000a<<endif>>\u000a<<if $goeastaction>>\u000a[[Go East|Locked Door]]\u000a<<endif>>\u000a<<if $gosouthaction>>\u000a[[Go South|Back To The Grind]]\u000a<<endif>>\u000a<<if $gowestaction>>\u000a[[Go West|Slide To Where?]]\u000a<<endif>>
+p1071
+sS'created'
+p1072
+g21
+((I2012
+I11
+I3
+I16
+I12
+I3
+I5
+I308
+I1
+tp1073
+(dp1074
+tp1075
+Rp1076
+sS'title'
+p1077
+VCommands_Set_North_Office
+p1078
+sS'modified'
+p1079
+g1076
+sS'tags'
+p1080
+(lp1081
+Vcommands
+p1082
+aVcset1
+p1083
+asbsa(dp1084
+g12
+I00
+sg13
+(lp1085
+I10
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1086
+(dp1087
+S'text'
+p1088
+V<<if $hasknife>><<$frankdead = 1>>\u000aYou successfully killed Frank.  Now what? \u000a<<if $charliedead>>\u000a<<display End_Scene>>\u000a<<else>>\u000aGet sent to [[Alien Pub]]\u000a<<endif>>\u000a<<else>>\u000aYou should pick up a stabbing implement before attempting stabbing.\u000a<<endif>>\u000a<<set $frankaction = 0>><<display Commands_Set_North_Office>>
+p1089
+sS'created'
+p1090
+g21
+((I2012
+I11
+I3
+I16
+I19
+I46
+I5
+I308
+I1
+tp1091
+(dp1092
+tp1093
+Rp1094
+sS'title'
+p1095
+VMurder
+p1096
+sS'modified'
+p1097
+g1094
+sS'tags'
+p1098
+(lp1099
+sbsa(dp1100
+g12
+I00
+sg13
+(lp1101
+I150
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1102
+(dp1103
+S'text'
+p1104
+V<<if $frankdead eq 0>>\u000aFrank says, "Don't take my keys!  Leave them alone."\u000a<<else>>\u000aYou remove the keys from Frank's dead body.<<set $hashousekeys = 1>>\u000a<<endif>>\u000a<<set $getkeyaction = 0>><<display Commands_Set_North_Office>>
+p1105
+sS'created'
+p1106
+g21
+((I2012
+I11
+I3
+I16
+I41
+I51
+I5
+I308
+I1
+tp1107
+(dp1108
+tp1109
+Rp1110
+sS'title'
+p1111
+VWhose Keys?
+p1112
+sS'modified'
+p1113
+g1110
+sS'tags'
+p1114
+(lp1115
+sbsa(dp1116
+g12
+I00
+sg13
+(lp1117
+I290
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1118
+(dp1119
+S'text'
+p1120
+V<<if $frankdead eq 0>>\u000aThere is no money here to take.\u000a<<else>>\u000aYou remove the keys from Frank's dead body.<<set $hashousekeys = 1>>\u000a<<endif>>\u000a<<set $getmoneyaction = 0>><<remember $getmoneyaction>><<display Commands_Set_Alien_Pub>>
+p1121
+sS'created'
+p1122
+g21
+((I2012
+I11
+I3
+I17
+I39
+I10
+I5
+I308
+I1
+tp1123
+(dp1124
+tp1125
+Rp1126
+sS'title'
+p1127
+VLooking For Money In All The Wrong Places
+p1128
+sS'modified'
+p1129
+g1126
+sS'tags'
+p1130
+(lp1131
+sbsa(dp1132
+g12
+I00
+sg13
+(lp1133
+I430
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1134
+(dp1135
+S'text'
+p1136
+VA look around the office reveals no knife to be found.\u000a<<set $getknifeaction = 0>><<display Commands_Set_North_Office>>
+p1137
+sS'created'
+p1138
+g21
+((I2012
+I11
+I3
+I16
+I55
+I38
+I5
+I308
+I1
+tp1139
+(dp1140
+tp1141
+Rp1142
+sS'title'
+p1143
+VMaybe You Should Get The Knife Elsewhere
+p1144
+sS'modified'
+p1145
+g1142
+sS'tags'
+p1146
+(lp1147
+sbsa(dp1148
+g12
+I00
+sg13
+(lp1149
+I570
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1150
+(dp1151
+S'text'
+p1152
+V<<if $haspoison>><<set $frankdead = 1>><<set $frankpoisoned>>You stealthily \u000a<<if $charliedead>>\u000a<<display End_Scene>>\u000a<<else>>\u000a\u000aGet sent to  [[Alien Pub]].<<endif>>\u000a<<else>>\u000aYou see Frank drinking a coffee!  Unfortunately, you do not have any poison.\u000a<<endif>>\u000a<<set $droppoisonincoffeeaction = 0>><<display Commands_Set_Alien_Pub>>
+p1153
+sS'created'
+p1154
+g21
+((I2012
+I11
+I3
+I18
+I7
+I21
+I5
+I308
+I1
+tp1155
+(dp1156
+tp1157
+Rp1158
+sS'title'
+p1159
+VPoison Charlie's Coffee
+p1160
+sS'modified'
+p1161
+g1158
+sS'tags'
+p1162
+(lp1163
+sbsa(dp1164
+g12
+I01
+sg13
+(lp1165
+I1410
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p1166
+(dp1167
+g484
+V<<if $frankpoisoned and $charliestabbed>>\u000aYou poisoned Frank and stabbed Charlie!  You have saved the world from certain doom!  Congratulations!\u000a<<else>>\u000a<<if $frankdead eq 0 or $charliedead eq 0>>\u000aYou have allowed bad guys to survive!  The world is headed for certain doom!  This is horrible news, make your time!\u000a<<else>>\u000aYou have managed to kill the bad guys, but the future of the world is unclear.  Perhaps they will still yet destroy the world.  It is uncertain.  It will be determined in the sequel.\u000a<<endif>>\u000a<<endif>>\u000aYour score is <<print $frankpoisoned + $charliestabbed>> out of 2 points.\u000a\u000aThe end.\u000a
+p1168
+sg494
+(lp1169
+sg486
+g21
+((I2012
+I11
+I4
+I2
+I43
+I8
+I6
+I309
+I0
+tp1170
+(dp1171
+tp1172
+Rp1173
+sg493
+g1173
+sg491
+VEnd_Scene
+p1174
+sbsa(dp1175
+g12
+I00
+sg13
+(lp1176
+I710
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1177
+(dp1178
+S'text'
+p1179
+VFrank looks for something to offer you.  "Well, I have this old coffee that has been sitting around all day, would you like that?  It's probably not the drink you were looking for."\u000a\u000aYou politely refuse.\u000a<<set $askfordrinkaction=0>><<display Commands_Set_North_Office>>
+p1180
+sS'created'
+p1181
+g21
+((I2012
+I11
+I3
+I21
+I58
+I17
+I5
+I308
+I1
+tp1182
+(dp1183
+tp1184
+Rp1185
+sS'title'
+p1186
+VNo Drink With Frank
+p1187
+sS'modified'
+p1188
+g1185
+sS'tags'
+p1189
+(lp1190
+sbsa(dp1191
+g12
+I00
+sg13
+(lp1192
+I850
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1193
+(dp1194
+S'text'
+p1195
+VCharlie is not here to be jumped upon.\u000a<<set $charlesaction = 0>><<display Commands_Set_North_Office>>\u000a
+p1196
+sS'created'
+p1197
+g21
+((I2012
+I11
+I3
+I17
+I3
+I10
+I5
+I308
+I1
+tp1198
+(dp1199
+tp1200
+Rp1201
+sS'title'
+p1202
+VNo Charlie
+p1203
+sS'modified'
+p1204
+g1201
+sS'tags'
+p1205
+(lp1206
+sbsa(dp1207
+g12
+I00
+sg13
+(lp1208
+I990
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1209
+(dp1210
+S'text'
+p1211
+V<<if $hashousekey or $hasalienkey or $hasjanitorkey>>\u000aYou may have a key, but you have no lake to throw it in to.\u000a<<else>>\u000aYou don't have a key, nor any lake to throw it in to!\u000a<<endif>>\u000a<<set $keyintolakeaction = 0>><<display Commands_North_Office>>
+p1212
+sS'created'
+p1213
+g21
+((I2012
+I11
+I3
+I17
+I56
+I16
+I5
+I308
+I1
+tp1214
+(dp1215
+tp1216
+Rp1217
+sS'title'
+p1218
+VThere Is No Lake Here
+p1219
+sS'modified'
+p1220
+g1217
+sS'tags'
+p1221
+(lp1222
+sbsa(dp1223
+g12
+I00
+sg13
+(lp1224
+I1130
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1225
+(dp1226
+S'text'
+p1227
+VFrank says "Don't leave yet!  Something wierd is going on and I am not sure I want to be left alone.  Give me five more minutes and I'll leave with you."\u000a<<set $gonorthaction = 0>><<display Commands_Set_North_Office>>
+p1228
+sS'created'
+p1229
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp1230
+(dp1231
+tp1232
+Rp1233
+sS'title'
+p1234
+VDon't Go Yet
+p1235
+sS'modified'
+p1236
+g1233
+sS'tags'
+p1237
+(lp1238
+sbsa(dp1239
+g12
+I00
+sg13
+(lp1240
+I1270
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1241
+(dp1242
+S'text'
+p1243
+VThe door to your boss's office is locked.\u000a<<set $goeastaction = 0>><<display Commands_Set_North_Office>>
+p1244
+sS'created'
+p1245
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp1246
+(dp1247
+tp1248
+Rp1249
+sS'title'
+p1250
+VLocked Door
+p1251
+sS'modified'
+p1252
+g1249
+sS'tags'
+p1253
+(lp1254
+sbsa(dp1255
+g12
+I00
+sg13
+(lp1256
+I1410
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1257
+(dp1258
+S'text'
+p1259
+VYou return to your cubicle.  Frank says, "I'll catch up with you shortly!"\u000a<<set $gosouthaction = 0>><<display Commands_Set_1>>
+p1260
+sS'created'
+p1261
+g21
+((I2012
+I11
+I3
+I17
+I50
+I50
+I5
+I308
+I1
+tp1262
+(dp1263
+tp1264
+Rp1265
+sS'title'
+p1266
+VBack To The Grind
+p1267
+sS'modified'
+p1268
+g1265
+sS'tags'
+p1269
+(lp1270
+sbsa(dp1271
+g12
+I00
+sg13
+(lp1272
+I1550
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p1273
+(dp1274
+S'text'
+p1275
+VAs you walk toward the window, you notice a large slide.  "What is that?" you say out loud.\u000a\u000a"Someone put in a large slide from our floor to the pub right there," Frank explains.  "Literally to the nearest pub.  Don't jump on that slide yet, give me five minutes, and I'll join you at that pub."\u000a<<set $gowestaction = 0>><<display Commands_Set_North_Office>>
+p1276
+sS'created'
+p1277
+g21
+((I2012
+I11
+I3
+I18
+I11
+I13
+I5
+I308
+I1
+tp1278
+(dp1279
+tp1280
+Rp1281
+sS'title'
+p1282
+VSlide To Where?
+p1283
+sS'modified'
+p1284
+g1281
+sS'tags'
+p1285
+(lp1286
+sbsasS'scale'
+p1287
+I1
+ss.
