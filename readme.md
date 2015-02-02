@@ -23,8 +23,4 @@ clean up.  The ideas are in there, though.
 
 You will find a [playable version](http://dl.dropbox.com/u/59395735/AllYourActions.html) here, 
 but if you really want to look at the source code,
-the .tws file is a Twine Source code file.  I really like 
-[Twine](http://gimcrackd.com/etc/src/) 
-for this sort of thing - if 
-they would add arrays and for loops I'd think it was the awesomest text adventure coding
-tool ever.  
+the .tws file is a [Twine](http://gimcrackd.com/etc/src/) source code file.
